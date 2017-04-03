@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{493A6ADA-F202-4C15-8094-652BF25CB413}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Örebro</RootNamespace>
+    <AssemblyName>Örebro</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Mall\trunk\Mall.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Fonts\arial.ttf" />
+    <None Include="Resources\Fonts\arialbd.ttf" />
+    <None Include="Resources\Fonts\code128.ttf" />
+    <None Include="Resources\Fonts\EyeDocBarcode.ttf" />
+    <None Include="Resources\Fonts\ocrb10.ttf" />
+    <None Include="Resources\Fonts\times.ttf" />
+    <None Include="Resources\Fonts\timesbd.ttf" />
+    <None Include="Resources\Fonts\timesbi.ttf" />
+    <None Include="Resources\Fonts\timesi.ttf" />
+    <None Include="Resources\Fonts\verdana.ttf" />
+    <None Include="RÖL001\trunk\RÖL001.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RÖL002\trunk\RÖL002.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Mall\trunk\Mall.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Dictionary\formsresourcedictionary.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RÖL001\trunk\RÖL001.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RÖL002\trunk\RÖL002.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Mall\trunk\Mall.xml" />
+    <Content Include="Mall\trunk\Mall_MAP_COPY.xml" />
+    <Content Include="Mall\trunk\Mall_MAP_EBIM.xml" />
+    <Content Include="RÖL001\trunk\RÖL001.xml" />
+    <Content Include="RÖL001\trunk\RÖL001_MAP_EBIM.xml" />
+    <Content Include="RÖL002\trunk\RÖL002.xml" />
+    <Content Include="RÖL002\trunk\RÖL002_MAP_EBIM.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

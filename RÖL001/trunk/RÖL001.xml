@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<blankett xmlns="https://www.eyedoc.se/schemas/form/rol001/1">
+  <patientED1>
+    <personnr />
+    <namn>
+      <fnamn />
+      <mnamn />
+      <tnamn />
+      <enamn />
+      <knamn />
+    </namn>
+    <kon />
+    <fodelsetidpunkt />
+  </patientED1>
+  <enheterED1 />
+  <formlist>
+    <formgroup typ="blankett">
+      <datevalue typ="datum">
+        <value />
+      </datevalue>
+    </formgroup>
+    <formgroup typ="Tobak">
+      <string50value typ="MinaRokvanor">
+        <value />
+      </string50value>
+      <string50value typ="MinaRokvanor_dagligen">
+        <value />
+      </string50value>
+      <string50value typ="MinaSnusvanor">
+        <value />
+      </string50value>
+      <string50value typ="MinaSnusvanor_dagligen">
+        <value />
+      </string50value>
+    </formgroup>
+    <formgroup typ="Alkohol">
+      <string50value typ="StandardglasHurManga">
+        <value />
+      </string50value>
+      <string50value typ="StandardglasHurOfta">
+        <value />
+      </string50value>
+    </formgroup>
+    <formgroup typ="FysiskAktivitet">
+      <string50value typ="Tung">
+        <value />
+      </string50value>
+      <string50value typ="Latt">
+        <value />
+      </string50value>
+    </formgroup>
+    <formgroup typ="Mat">
+      <string50value typ="Gronsaker">
+        <value />
+      </string50value>
+      <string50value typ="FruktBar">
+        <value />
+      </string50value>
+      <string50value typ="FiskSkaldjur">
+        <value />
+      </string50value>
+      <string50value typ="Kaffebrod">
+        <value />
+      </string50value>
+      <string50value typ="Frukost">
+        <value />
+      </string50value>
+    </formgroup>
+  </formlist>
+  <diagnosED1 />
+  <lakemedelED1 />
+  <kontaktED1 />
+  <check>
+    <subcheck>
+      <usercheck>
+        <checked />
+        <username />
+        <usercode />
+        <timestamp />
+      </usercheck>
+    </subcheck>
+  </check>
+</blankett>

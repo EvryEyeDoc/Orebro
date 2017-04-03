@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--MAP EBIM-->
+<eyedoc version="1.0">
+  <transform>
+    <global>
+      <source>
+        <xpath type="root">*/form/fieldcode</xpath>
+        <xpath type="format">field[@name='{0}']/@data</xpath>
+      </source>
+      <target>
+        <xpath type="root">blankett</xpath>
+      </target>
+    </global>
+    <rows>
+      <row>
+        <source>
+          <item action="replace" type="xpathformat">pat_namn</item>
+        </source>
+        <target>
+          <item action="replace" type="xpath">patientED1/namn/knamn</item>
+        </target>
+      </row>
+      <row>
+        <source>
+          <item action="replace" type="xpathformat">pat_personnr</item>
+        </source>
+        <target>
+          <item action="replace" type="xpath">patientED1/personnr</item>
+        </target>
+      </row>
+      <row>
+        <source>
+          <item action="replace" type="xpathformat">datum</item>
+        </source>
+        <target>
+          <item action="replace" type="xpath">formlist/formgroup[@typ='blankett']/datevalue[@typ='datum']/value</item>
+        </target>
+      </row>
+    </rows>
+  </transform>
+</eyedoc>
